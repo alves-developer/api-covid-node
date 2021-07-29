@@ -7,11 +7,16 @@
   "license": "MIT",
   "scripts": {
     "build": "tsc",
-    "start": "yarn build && node dist/src/index.js"
+    "start": "yarn build && node dist/src/index.js",
+    "lint": "eslint -f table ./src ./test --ext .ts --quiet",
+    "lint:fix": "eslint ./src ./test --ext .ts --fix"
   },
   "devDependencies": {
     "@types/module-alias": "^2.0.1",
     "@types/node": "^16.4.6",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.31.0",
     "typescript": "^4.3.5"
   },
   "dependencies": {
