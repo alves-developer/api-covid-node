@@ -1,0 +1,20 @@
+{
+  "name": "api-covid-node",
+  "version": "1.0.0",
+  "description": "Api node for consumer disease.sh/v3 public api",
+  "main": "index.js",
+  "author": "Francisco Nascimento <f.b.nascimento@accenture.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/src/index.js"
+  },
+  "devDependencies": {
+    "@types/module-alias": "^2.0.1",
+    "@types/node": "^16.4.6",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "module-alias": "^2.2.2"
+  }
+}
